@@ -1,5 +1,42 @@
 == README
 
+Blog App
+
+  Allows creation, deletion, editing of posts
+  
+    Posts
+      Generate controller: "rails g controller posts" > 
+      create route to controller >
+      create index action in posts controller > create index view
+    Create Posts
+      create new action in posts controller > create new view
+      
+      create forms in new view for title/content of post using form_for
+        title, body, submit button forms
+        
+      Generate posts model: "rails g model Post title:string body:text"
+      Migrate database "bundle exec rake db:migrate"
+      
+      create CREATE action in posts controller >
+        create new Post model then save.
+        feed new Post post_params via private method
+        new private method in post controller post_params
+        require :post, permit(:title, :body)
+      create show page for posts.
+        <%= @post.title, @post.body @post.ect to show content in view %>
+      create SHOW action to show view
+        show @posts by using @post = Post.find(params[:id])
+      Edit INDEX action to show all posts
+        @posts = Post.all
+      Edit INDEX view to show all posts
+        loop through @posts to display title, content, date.
+        strftime for date
+  Allow creation, deletion, editing of posts
+  
+  Sign in/Out
+  
+  Admin user to delete/edit posts/comments
+
 This README would normally document whatever steps are necessary to get the
 application up and running.
 
