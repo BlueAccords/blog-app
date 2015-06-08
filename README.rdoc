@@ -31,6 +31,10 @@ Blog App
       Edit INDEX view to show all posts
         loop through @posts to display title, content, date.
         strftime for date
+      VALIDATION for post title/body in post.rb
+      Edit NEW action in controller
+        @post = Post.new
+      Display errors in new post view.
   Style layouts
     side bar html/css/links
         
