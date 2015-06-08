@@ -31,6 +31,9 @@ Blog App
       Edit INDEX view to show all posts
         loop through @posts to display title, content, date.
         strftime for date
+  Style layouts
+    side bar html/css/links
+        
   Allow creation, deletion, editing of posts
   
   Sign in/Out
